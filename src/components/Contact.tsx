@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, MapPin } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -22,12 +22,20 @@ const Contact = () => {
           and help bring your ideas to life.
         </p>
 
-        <div className="grid sm:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
             <CardContent className="p-6 text-center">
               <Mail className="w-8 h-8 mx-auto mb-4 text-cyan-400" />
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-slate-300 text-sm">lipsita1501@gmail.com</p>
+              <p className="text-slate-300 text-sm">lipsita3108@gmail.com</p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <CardContent className="p-6 text-center">
+              <Phone className="w-8 h-8 mx-auto mb-4 text-green-400" />
+              <h3 className="font-semibold mb-2">Phone</h3>
+              <p className="text-slate-300 text-sm">+91 7327078940</p>
             </CardContent>
           </Card>
 

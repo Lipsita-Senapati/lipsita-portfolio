@@ -7,12 +7,12 @@ const TechStack = () => {
     { name: "Docker", icon: "🐳", category: "DevOps" },
     { name: "Azure", icon: "☁️", category: "Cloud" },
     { name: "Git", icon: "📝", category: "Version Control" },
-    { name: "JavaScript", icon: "💛", category: "Programming" },
-    { name: "React", icon: "⚛️", category: "Frontend" },
-    { name: "TypeScript", icon: "📘", category: "Programming" },
-    { name: "Tailwind CSS", icon: "🎨", category: "Styling" },
     { name: "LangChain", icon: "🔗", category: "AI/ML" },
-    { name: "RAG Systems", icon: "🔍", category: "AI/ML" }
+    { name: "RAG Systems", icon: "🔍", category: "AI/ML" },
+    { name: "Kubernetes", icon: "⚙️", category: "DevOps" },
+    { name: "Golang", icon: "🔷", category: "Programming" },
+    { name: "Java", icon: "☕", category: "Programming" },
+    { name: "JIRA", icon: "📋", category: "Project Management" }
   ];
 
   const categories = [...new Set(techStack.map(tech => tech.category))];
