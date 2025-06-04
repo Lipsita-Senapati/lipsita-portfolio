@@ -29,6 +29,18 @@ const Projects = () => {
       gradient: "from-purple-500 to-pink-600"
     },
     {
+      title: "Oversized Vehicle Navigation (OVN)",
+      description: "Developed a routing solution integrated with the Mercedes me App and MBUX navigation system to ensure oversized vehicles receive dimension-aware, compatible routes. The system factors in vehicle dimensions to prevent routing through restricted zones.",
+      technologies: ["Golang", "Visual Studio", "Docker", "Kubernetes", "Azure DevOps"],
+      highlights: [
+        "Contributed to the backend development of dimension-aware routing logic",
+        "Integrated FOSS certification and Sonarqube in the Code Pipeline",
+        "Collaborated with cross-functional teams to ensure end-to-end validation and rollout",
+        "Participated in user testing to refine vehicle setting updates and routing accuracy"
+      ],
+      gradient: "from-orange-500 to-red-600"
+    },
+    {
       title: "Microservices & AI Integration - Robert Bosch",
       description: "Developed microservices in Spring Boot and contributed to early GenAI integrations, participating in AI-driven service design discussions.",
       technologies: ["Spring Boot", "Microservices", "CI/CD", "Docker", "AI Integration"],
