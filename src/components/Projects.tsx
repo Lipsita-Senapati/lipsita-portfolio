@@ -43,14 +43,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-cyan-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Showcasing impactful AI solutions that drive real-world automation and innovation
           </p>
         </div>
@@ -59,14 +59,14 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              className="group overflow-hidden border-slate-700 bg-slate-800/50 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                <CardTitle className="text-2xl text-white group-hover:text-purple-400 transition-colors duration-300">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-lg text-gray-600 leading-relaxed">
+                <CardDescription className="text-lg text-slate-300 leading-relaxed">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -76,19 +76,19 @@ const Projects = () => {
                     <Badge 
                       key={tech} 
                       variant="secondary" 
-                      className="bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-900/50 text-purple-300 hover:bg-purple-800/50 transition-colors duration-300 border border-purple-700"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-gray-900">Key Achievements:</h4>
+                  <h4 className="font-semibold text-white">Key Achievements:</h4>
                   <ul className="space-y-2">
                     {project.highlights.map((highlight, highlightIndex) => (
                       <li key={highlightIndex} className="flex items-start space-x-3">
                         <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${project.gradient} mt-2 flex-shrink-0`}></div>
-                        <span className="text-gray-700">{highlight}</span>
+                        <span className="text-slate-300">{highlight}</span>
                       </li>
                     ))}
                   </ul>
